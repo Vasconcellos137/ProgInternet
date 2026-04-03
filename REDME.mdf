@@ -1,9 +1,7 @@
 shift + ! -> estrutura base html
 <!-- -> comentário
 
-OBS: instalar o Live Server no nosso not
+OBS: instalar o Live Server e HTML CSS Support no nosso not
 Botão direito + abrir com live server -> pagina do nosso bagulho 
-
-OBS: instalar HTML CSS Support tbm
 
 f12 -> especionar elementos de qualquer página, ver o código.

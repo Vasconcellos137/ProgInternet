@@ -1,0 +1,74 @@
+:root {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+/* 1. % (porcentagem) */
+.pai {
+    width: 500px;
+    background: #aeff5e;
+    padding: 10px;
+    margin: 20px;
+}
+
+.filho {
+    width: 50%; /* metade do pai, é baseado no valor dele */
+    background: #47cc29;
+    padding: 10px;
+}
+
+/* 2. REM */
+.rem-exemplo {
+    font-size: 2rem; /* se baseia no tamanho do root*/
+    background: rgb(255, 30, 30);
+    margin: 20px;
+}
+
+/* 3. EM */
+.em-pai {
+    font-size: 20px;
+    background: rgb(255, 255, 122);
+    padding: 10px;
+    margin: 20px;
+}
+
+.em-filho {
+    font-size: 2em; /* 2x o tamanho do pai, baseado no valor dele */
+    background: rgb(255, 196, 0);
+}
+
+/* 4. VH e VW */
+.tela {
+    /* baseado na altura e largura da tela/viewport/página, é como se fosse a área da caixa */
+    height: 50vh; /* altura */
+    width: 50vw; /* largura */
+    background: rgb(218, 54, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* 5. PX (fixo) */
+.px {
+    /* Não muda de tamanho, é extamente o valor definido aqui */
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px; /* para centralizar o texto verticalmente */
+    background: rgb(82, 157, 255);
+    margin: 20px;
+}
+
+/* 6. MAX-WIDTH (responsivo) */
+.responsivo {
+    width: 100%;
+    max-width: 400px;
+    background: rgb(255, 58, 170);
+    margin: 20px;
+    padding: 10px;
+}
