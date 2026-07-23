@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagulho de Tempo</title>
+</head>
+
+<body>
+
+    <div id="Main">
+        <h2>Data e Hora Atual</h2>
+
+        <p id="horaAtual"></p>
+        <p id="dataAtual"></p>
+    </div>
+
+    <hr>
+
+    <div id="CalculadoraIdd">
+        <h2>Calculadora de Idade</h2>
+
+        <label for="dataNascimento">Digite sua data de nascimento:</label>
+        <input type="date" id="dataNascimento">
+
+        <button onclick="calcularIdade()">
+            Calcular
+        </button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -2,70 +2,84 @@
 <html lang="PT-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Review</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Review</title>
 </head>
 
 <body>
 
-    <script>
-        //STRINGs
+  <script>
+    //MANIPULAÇÃO DE STRINGS
 
-        let nome = "Nick"
-        let cidade = "Cascavel - PR"
-        let curso = "Informatica"
+    let nome = "Nick"
+    let cidade = "Cascavel - PR"
+    let curso = "Informatica"
 
-        console.log(nome.length) //Retona o tamanho da string, quantidade de caracteres
-        console.log(nome.toUpperCase()) //Formata a string em maiusculo
-        console.log(nome.toLowerCase()) //Formata a string em minusculo
-        console.log(nome.replace("Nick", "Nicolas")) //Substitui a string "Nick" por "Nicolas"
-        console.log(curso.replaceAll("a", "@")) //Substitui todas as letras "a" por "@"
+    console.log(nome.length) //Retona o tamanho da string, quantidade de caracteres
+    console.log(nome.toUpperCase()) //Formata a string em maiusculo
+    console.log(nome.toLowerCase()) //Formata a string em minusculo
+    console.log(nome.replace("Nick", "Nicolas")) //Substitui a string "Nick" por "Nicolas"
+    console.log(curso.replaceAll("a", "@")) //Substitui todas as letras "a" por "@"
 
-        let email = "nickwolf137@gmail.com"
-        console.log(email.includes("@")) //Retorna true ou false, verifica se a string contem "@"
-        console.log(email.startsWith("nick")) //Verifica se a string começa com "nick"
-        console.log(email.endsWith(".com")) //Verifica se a string termina com ".com"
+    let email = "nickwolf137@gmail.com"
+    console.log(email.includes("@")) //Retorna true ou false, verifica se a string contem "@"
+    console.log(email.startsWith("nick")) //Verifica se a string começa com "nick"
+    console.log(email.endsWith(".com")) //Verifica se a string termina com ".com"
 
-        console.log(cidade.split(" ")) //Divide a string em um array, separando por " " 
-        console.log(cidade.join("-")) //Junta o array em uma string, separando por "-"
-        console.log(cidade.trim()) //Remove os espaços em branco do inicio e do fim da string
+    console.log(cidade.split(" ")) //Divide a string em um array, separando por " " 
+    console.log(cidade.join("-")) //Junta o array em uma string, separando por "-"
+    console.log(cidade.trim()) //Remove os espaços em branco do inicio e do fim da string
+
+    console.log(cidade.slice(0, 7)) //Retorna uma parte da string,
+    console.log(curso.substring(0, 4)) //Retorna uma parte da string,
+
+  </script>
+
+<!-- Funções data e hora -->
+  <script>
+    let data = new Date() //Cria um objeto Date com a data e hora atual
+
+    console.log(data) //Retorna a data e hora atual
+    console.log(data.getDate()) //Retorna o dia do mês (1-31)
+    console.log(data.getMonth()) //Retorna o mês (0-11)
+    console.log(data.getFullYear()) //Retorna o ano (4 dígitos)
+    console.log(data.getHours()) //Retorna a hora (0-23)
+    console.log(data.getMinutes()) //Retorna os minutos (0-59)
+    console.log(data.getSeconds()) //Retorna os segundos (0-59)
+    console.log(data.getMilliseconds()) //Retorna os milissegundos (0-999)
+  </script>
 
 
-        console.log(cidade.slice(0, 7)) //Retorna uma parte da string,
-        console.log(curso.substring(0, 4)) //Retorna uma parte da string,
-
-
-    </script>
-
-    <table>
+<!-- TABELA COMPARATIVA ENTRE SLICE E SUBSTRING -->
+  <table style="width: 100%; max-width: 650px; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px; background-color: #ffffff; border: 1px solid #dee2e6; border-radius: 6px; overflow: hidden;">
   <thead>
-    <tr>
-      <th>Característica</th>
-      <th>slice(start, end)</th>
-      <th>substring(start, end)</th>
+    <tr style="background-color: #9600b4; color: #ffffff;">
+      <th style="padding: 12px 16px; text-align: left;">Característica</th>
+      <th style="padding: 12px 16px; text-align: left;">slice(start, end)</th>
+      <th style="padding: 12px 16px; text-align: left;">substring(start, end)</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Índices Negativos</td>
-      <td>Conta a partir do final do texto.</td>
-      <td>Trata como se fossem 0.</td>
+    <tr style="border-bottom: 1px solid #dee2e6; background-color: #ffffff;">
+      <td style="padding: 12px 16px; font-weight: bold;">Índices Negativos</td>
+      <td style="padding: 12px 16px;">Conta a partir do final do texto.</td>
+      <td style="padding: 12px 16px;">Trata como se fossem 0.</td>
     </tr>
-    <tr>
-      <td>Se start &gt; end</td>
-      <td>Retorna uma string vazia "".</td>
-      <td>Inverte os argumentos e funciona.</td>
+    <tr style="border-bottom: 1px solid #dee2e6; background-color: #f8f9fa;">
+      <td style="padding: 12px 16px; font-weight: bold;">Se start &gt; end</td>
+      <td style="padding: 12px 16px;">Retorna uma string vazia " ".</td>
+      <td style="padding: 12px 16px;">Inverte os argumentos e funciona.</td>
     </tr>
-    <tr>
-      <td>Compatibilidade</td>
-      <t>Funciona em Strings e Arrays.</td>
-      <td>Funciona apenas em Strings.</td>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 12px 16px; font-weight: bold;">Compatibilidade</td>
+      <td style="padding: 12px 16px;">Funciona em Strings e Arrays.</td>
+      <td style="padding: 12px 16px;">Funciona apenas em Strings.</td>
     </tr>
   </tbody>
 </table>
 
-
 </body>
 
+<p>hora-dia-semana-mes-ano, calculadora de idade, proximo aniversário, contagem regressiva, datas especiais</p>
 </html>
