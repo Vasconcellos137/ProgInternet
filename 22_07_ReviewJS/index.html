@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Review</title>
+</head>
+
+<body>
+
+    <script>
+        //STRINGs
+
+        let nome = "Nick"
+        let cidade = "Cascavel - PR"
+        let curso = "Informatica"
+
+        console.log(nome.length) //Retona o tamanho da string, quantidade de caracteres
+        console.log(nome.toUpperCase()) //Formata a string em maiusculo
+        console.log(nome.toLowerCase()) //Formata a string em minusculo
+        console.log(nome.replace("Nick", "Nicolas")) //Substitui a string "Nick" por "Nicolas"
+        console.log(curso.replaceAll("a", "@")) //Substitui todas as letras "a" por "@"
+
+        let email = "nickwolf137@gmail.com"
+        console.log(email.includes("@")) //Retorna true ou false, verifica se a string contem "@"
+        console.log(email.startsWith("nick")) //Verifica se a string começa com "nick"
+        console.log(email.endsWith(".com")) //Verifica se a string termina com ".com"
+
+        console.log(cidade.split(" ")) //Divide a string em um array, separando por " " 
+        console.log(cidade.join("-")) //Junta o array em uma string, separando por "-"
+        console.log(cidade.trim()) //Remove os espaços em branco do inicio e do fim da string
+
+
+        console.log(cidade.slice(0, 7)) //Retorna uma parte da string,
+        console.log(curso.substring(0, 4)) //Retorna uma parte da string,
+
+
+    </script>
+
+    <table>
+  <thead>
+    <tr>
+      <th>Característica</th>
+      <th>slice(start, end)</th>
+      <th>substring(start, end)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Índices Negativos</td>
+      <td>Conta a partir do final do texto.</td>
+      <td>Trata como se fossem 0.</td>
+    </tr>
+    <tr>
+      <td>Se start &gt; end</td>
+      <td>Retorna uma string vazia "".</td>
+      <td>Inverte os argumentos e funciona.</td>
+    </tr>
+    <tr>
+      <td>Compatibilidade</td>
+      <t>Funciona em Strings e Arrays.</td>
+      <td>Funciona apenas em Strings.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</body>
+
+</html>
